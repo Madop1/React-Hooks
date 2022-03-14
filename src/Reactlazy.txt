@@ -1,0 +1,4 @@
+React lazy loading: 
+React has two features that make code-splitting and lazy loading to React components, they are React.lazy() and React.suspense
+React.lazy() is a function that enables you to render a dynamic  import as a regular component.
+Dynamic import are way of code-splitting which is central of lazy loading. 

@@ -23,10 +23,9 @@ function Fetch() {
   }
   return (
     <div style={{ textAlign: "center", color: "red", fontStyle: "italic" }}>
-      <h3> Fetching User from json</h3>
+      <h3> Fetching User from json</h3> 
       {data.map((e) => (
         <p key={e.id}>
-          {" "}
           {e.name} , {e.username}
         </p>
       ))}

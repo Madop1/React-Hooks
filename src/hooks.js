@@ -34,6 +34,7 @@ const Counter = () => {
       <h1>Counter: {counter}</h1>
     </div>
   );
+  
 };
 
 export default Counter;
