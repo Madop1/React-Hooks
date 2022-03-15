@@ -16,6 +16,7 @@ import { Provider } from "react-redux";
 // import Axios from "./Axios";
 import "./index.css";
 import Loader from "./Loader";
+// import Sample from "./Sample";
 
 const Fetch = React.lazy(() => import("./Fetch"));
 
@@ -32,6 +33,7 @@ ReactDOM.render(
       <Hooks3 /> */}
       {/* <Loader /> */}
         <Fetch />
+        {/* <Sample /> */}
         {/* <Axios /> */}
         {/* <RouterDom /> */}
         {/* <CounterHOC /> */}

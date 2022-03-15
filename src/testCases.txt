@@ -1,0 +1,26 @@
+Testing --> Manual and Automated Testing
+Manual Testing is the one which we do in the browser after we write the code to check how it is visible to the users.
+Automated Testing is the stranded procedure for testing a code, we write a code to test the code.
+Types of Automated testing:
+1) unit test.
+2) integrated test.
+3) end to end test
+
+Unit test : test the individual fucntions or components in isolation, most common and important kind of testing.
+Integrated test : test the combination of multiple blocks, intergrated tests is also important but focuses on unit test in most cases.
+End to End test : test complete scenarios in your app ,important but can also done manually(partially)
+
+tools used : jest and React Testing Library
+
+writing test - the three A's
+ A- arrange--setup test data, test conditions and test environment.
+ A- act--run logic that should be tested
+ A- assert--compare execution result with expected result.
+
+ screen. we have various functions eg: get, find and query
+ get functions throw error if an element is not found, query wont do that and find fucntions will return a promise.
+
+ to group our test use describe("argument", () => {
+     write your test here
+ })
+
