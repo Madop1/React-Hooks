@@ -39,8 +39,8 @@ describe("sample component", () => {
   test("looking for btn id change", () => {
     render(<Sample />);
 
-    let btnDocument=screen.getByTestId("btn")
-    userEvent.click(btnDocument)
+    let btnDocument = screen.getByTestId("btn");
+    userEvent.click(btnDocument);
 
     let helloWorldElement = screen.getAllByText("Changed!!", { exact: true });
     expect(helloWorldElement).toBeTruthy();

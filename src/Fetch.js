@@ -6,28 +6,31 @@ function Fetch() {
 
   useEffect(() => {
     loadData();
-  },[]);
+  }, []);
 
   async function loadData() {
     await fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => {
-        if(!response.ok){
-          throw Error ("can't fetch the data")
-        }
+        // if (!response.ok) {
+        //   throw Error("can't fetch the data");
+        // }
         return response.json();
       })
       .then((receivedData) => setData(receivedData))
-      .catch(err => {
-        console.log(err.message)
-      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   }
+  console.log("data",data)
   return (
-    <div style={{ textAlign: "center", color: "red", fontStyle: "italic" }}>
-      <h3> Fetching User from json</h3> 
+    <div
+      style={{ textAlign: "center", color: "red", fontStyle: "italic" }}
+    >
+      <h3> Fetching User from json</h3>
       {data.map((e) => (
-        <p data-testid="fetch" key={e.id}>
+        <li key={e.id}>
           {e.name} , {e.username}
-        </p>
+        </li>
       ))}
     </div>
   );
